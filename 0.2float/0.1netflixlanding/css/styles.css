@@ -13,10 +13,12 @@ font-family: 'Tilt Prism', cursive;
 
 /* CSS RESET */
 *{
-    border: 2px solid red;
+    /*  border: 2px solid red;  */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    
 }
 
 
@@ -39,7 +41,7 @@ VARIABLES START
     --ff-secondary:'Bebas Neue', sans-serif;
     --transition:all 0.3s linear;
     --spacing:0.05rem;
-    --radius:0.5rem
+    --radius:0.25rem
     
 }
 
@@ -205,15 +207,24 @@ NAVBAR START
     
 }
 
+.nav-itens{
+    transition:var(--transition)
+}
+
+.nav-itens a:hover{
+    color: var(--clr-grey-light);
+}
+
 .icons-nav {
     display: inline-block;
     width: 20%;
+    transform: translateY(-30%);
     
 }
 
 .icons-nav i {
     padding-right: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 
@@ -284,6 +295,9 @@ HEADER START
 .header {
     background: url(/0.2float/0.1netflixlanding/img/header.webp) center/cover no-repeat;
     min-height:30vh; 
+    width: 100vw;
+    
+    
 
 }
 
@@ -291,6 +305,7 @@ HEADER START
 .banner{
     width: 50%;
     position: relative;
+    
 }
 
 /* Banner img */
@@ -301,7 +316,7 @@ HEADER START
 }
 
 .banner h2{
-   font-size: 0.8rem;
+   font-size: 0.9rem;
 }
 
 .banner p{
@@ -316,7 +331,10 @@ HEADER START
     border-radius: var(--radius);
     padding: 0.3rem 1.1rem;
    
+}
 
+.banner-btn1:hover{
+    background: var(--clr-grey-light);
 }
 
 .banner-btn2{
@@ -328,10 +346,14 @@ HEADER START
     
 }
 
+.banner-btn2:hover{
+    background: #39393D;
+}
+
 /* media query */
 @media screen and (min-width:650px){
     .banner h2{
-   font-size: 1rem;
+   font-size: 1.1rem;
 }
 
 .banner p{
@@ -342,7 +364,7 @@ HEADER START
 }
 @media screen and (min-width:800px){
     .banner h2{
-   font-size: 1.2rem;
+   font-size: 1.3rem;
 }
 
 .banner p{
@@ -378,5 +400,148 @@ HEADER START
 /*
 ==================== 
 HEADER END
+====================
+*/
+
+
+
+/*
+==================== 
+ MOVIES START
+====================
+*/
+
+
+
+.movies{
+    overflow:hidden ;
+    
+}
+
+.movies-text h3 {
+    font-size: 1rem;
+}
+
+
+.movie {
+    width: 32%;
+    float: left;
+    transition: var(--transition);
+    cursor: pointer;
+    
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    
+    
+}
+
+/* Media Query start */
+@media screen and (min-width:800px){
+    .movie{
+        width: 24.99%;
+    }
+
+}
+@media screen and (min-width:1100px){
+    .movie{
+        width: 19.99%;
+    }
+
+}
+@media screen and (min-width:1400px){
+    .movie{
+        width: 16.66%;
+    }
+
+}
+
+
+
+/*
+==================== 
+ MOVIES END
+====================
+*/
+
+
+
+
+/*
+==================== 
+FOOTER START
+====================
+*/
+
+footer {
+    
+    margin-top:4rem ;
+    overflow: hidden;
+}
+
+/* Socials  */
+.socials{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.social-icon {
+    margin-right: 15px;
+    font-size: 1.4rem;
+}
+
+/* Footer text */
+.footer-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.footer-items {
+    list-style-type: none;
+}
+
+.footer-items li {
+    width: 50%;
+    float: left;
+}
+
+.footer-items a{
+    color: var(--clr-grey);
+}
+
+/*Footer end  */
+
+.footer-end {
+    width: 90%;
+    margin: 0 auto;
+    
+    
+}
+
+.footer-btn{
+    height: 6vh;
+}
+
+.footer-btn a{
+    padding: 0.5rem 0.3rem;
+    color: var(--clr-grey);
+    
+
+}
+
+
+.footer-copy {
+    color: var(--clr-grey);
+}
+
+/*
+==================== 
+FOOTER END
 ====================
 */

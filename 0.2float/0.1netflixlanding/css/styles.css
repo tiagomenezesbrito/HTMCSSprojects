@@ -213,12 +213,12 @@ NAVBAR START
 
 .icons-nav i {
     padding-right: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
 
-@media screen and (min-width:884px) {
+@media screen and (min-width:890px) {
     .netflix-logo-container{
     display: inline-block;
     width: 20%;
@@ -238,7 +238,7 @@ NAVBAR START
      transform: translateY(-25%);
     display: inline-block; 
     list-style-type:none;
-    width: 70%;
+    width: 65%;
     font-size:0.9rem;
     
     }
@@ -250,16 +250,16 @@ NAVBAR START
 
 .icons-nav {
     display: inline-block;
-    width: 9%;
+    width: 13%;
     
 }
 
 
 }
 
-@media screen and (min-width:884px) {
+@media screen and (min-width:1000px) {
     .nav-itens li {   
-    padding-right: 2rem;
+    padding-right: 1.5rem;
 
 }
 
@@ -290,11 +290,13 @@ HEADER START
 /* banner */
 .banner{
     width: 50%;
+    position: relative;
 }
 
 /* Banner img */
 .banner-img img {
     width: 100%;
+    max-width: 550px;
    
 }
 
@@ -304,7 +306,73 @@ HEADER START
 
 .banner p{
     font-size: 0.7rem;
-    max-width: 15rem;
+    width: 100%;
+    max-width: 16rem; 
+}
+
+.banner-btn1 {
+    background: var(--white);
+    color: black;
+    border-radius: var(--radius);
+    padding: 0.3rem 1.1rem;
+   
+
+}
+
+.banner-btn2{
+    
+    position: absolute;
+    transform: translateX(10%);
+    border-radius: var(--radius);
+    padding: 0.3rem 0.6rem;
+    
+}
+
+/* media query */
+@media screen and (min-width:650px){
+    .banner h2{
+   font-size: 1rem;
+}
+
+.banner p{
+    font-size: 0.8rem;
+    max-width: 18rem;
+}
+
+}
+@media screen and (min-width:800px){
+    .banner h2{
+   font-size: 1.2rem;
+}
+
+.banner p{
+    font-size: 0.9rem;
+    max-width: 20rem;
+}
+
+
+.banner-btn1,.banner-btn2 {
+    font-size: 1rem;
+}
+
+
+}
+
+@media screen and (min-width:1000px){
+    .banner h2{
+   font-size: 1.5rem;
+}
+
+    .banner p{
+    font-size: 1.1rem;
+    max-width: 25rem;
+}
+
+    .banner-btn1,.banner-btn2 {
+    font-size: 1.2rem;
+}
+
+
 }
 
 /*

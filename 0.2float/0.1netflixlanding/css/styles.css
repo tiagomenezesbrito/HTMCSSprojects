@@ -1,0 +1,273 @@
+/* FONTS */
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@400;600;700&family=Poppins:wght@400;600;700&family=Roboto&family=Tilt+Prism&display=swap');
+
+
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tilt Prism', cursive;
+*/
+
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*
+=============== 
+VARIABLES START
+===============
+*/
+:root{
+    /* colors */
+    --clr-primary:#E50914;
+    --clr-secondary:#141414;
+    --clr-grey:#535357;
+    --clr-grey-light:#C7C6C7;
+    --white:#FFFFFF;
+    /* others */
+    --ff-primary:'League Spartan', sans-serif;
+    --ff-secondary:'Bebas Neue', sans-serif;
+    --transition:all 0.3s linear;
+    --spacing:0.25rem;
+    --radius:0.5rem
+    
+}
+
+/*
+=============== 
+VARIABLES END
+===============
+*/
+
+
+/*
+==================== 
+GLOBAL SETINGS START
+====================
+*/
+
+body {
+    background: var(--clr-secondary);
+    color:var(--white);
+    font-family: var(--ff-primary);
+    line-height: 1.5;
+    font-size:0.875rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+   
+ }
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;   
+}
+
+h1,h2,h3,h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.7rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+
+
+/* More Global */
+
+/* CLEARFIX */
+.clearfix::after,.clearfix::before{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+/* clearfix end*/
+
+/* Centering */
+.centering{
+    padding: 2rem 0;
+    width: 94vw;
+    max-width:1170px;
+    margin: 0 auto;
+
+}
+
+
+.btn {
+    background: var(--clr-grey);
+    color: var(var(--white));
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+==================== 
+GLOBAL SETINGS END
+====================
+*/
+
+
+
+
+/*
+==================== 
+NAVBAR START
+====================
+*/
+
+
+
+.navbar {
+    height: 10vh;
+    /* Making the navbar occupy all width, then, applying
+    position fixed. */
+    width: 100vw; 
+    position: fixed;
+    
+}
+
+.cent-nav {
+    padding: 1rem 0;
+    position:relative ;
+    
+    
+}
+
+
+.netflix-logo-container{
+    display: inline-block;
+    width: 78%;
+    position: relative;
+}
+
+.netflix-logo {
+    padding-right: 2rem;
+    font-size: 1.7rem;
+    color: var(--clr-primary);
+    font-weight: 600;
+}
+
+.hide-logo {
+ position: absolute;
+ top: 50%;
+ /* left: 40%; */
+ transform: translateY(-50%);  
+ font-size: 1rem;  
+}
+
+
+.hide-nav-items {
+    display: none;
+}
+
+
+.nav-itens li {
+    display: inline-block;
+    padding-right: 0.5rem;
+    
+}
+
+.icons-nav {
+    display: inline-block;
+    width: 20%;
+    
+}
+
+.icons-nav i {
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (min-width:884px) {
+    .netflix-logo-container{
+    display: inline-block;
+    width: 20%;
+    }
+
+    .netflix-logo{
+        font-size: 2.25rem;
+    }
+
+    .hide-logo{
+        display: none;
+    }
+
+    .nav-itens {
+    
+    
+     transform: translateY(-25%);
+    display: inline-block; 
+    list-style-type:none;
+    width: 70%;
+    font-size:0.9rem;
+    
+    }
+
+    .nav-itens li {  
+    
+    padding-right: 1rem;
+}
+
+.icons-nav {
+    display: inline-block;
+    width: 9%;
+    
+}
+
+
+}
+
+@media screen and (min-width:884px) {
+    .nav-itens li {   
+    padding-right: 2rem;
+
+}
+
+}
+
+
+/*
+==================== 
+NAVBAR END
+====================
+*/
+

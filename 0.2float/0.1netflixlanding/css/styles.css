@@ -158,11 +158,8 @@ NAVBAR START
 
 .navbar {
     height: 8vh;
-    /* Making the navbar occupy all width, then, applying
-    position fixed. */
     width: 100vw; 
-    position: sticky;
-    z-index: 2;
+    /* position: sticky; */
     
 }
 

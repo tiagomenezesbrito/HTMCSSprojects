@@ -13,6 +13,7 @@ font-family: 'Tilt Prism', cursive;
 
 /* CSS RESET */
 *{
+    border: 2px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +38,7 @@ VARIABLES START
     --ff-primary:'League Spartan', sans-serif;
     --ff-secondary:'Bebas Neue', sans-serif;
     --transition:all 0.3s linear;
-    --spacing:0.25rem;
+    --spacing:0.05rem;
     --radius:0.5rem
     
 }
@@ -86,7 +87,7 @@ h1 {
     font-size: 2rem;
 }
 h2 {
-    font-size: 1.7rem;
+    font-size: 0.8rem;
 }
 h3 {
     font-size: 1.5rem;
@@ -116,7 +117,7 @@ p {
 .centering{
     padding: 2rem 0;
     width: 94vw;
-    max-width:1170px;
+    max-width:1900px;
     margin: 0 auto;
 
 }
@@ -153,13 +154,13 @@ NAVBAR START
 */
 
 
-
 .navbar {
-    height: 10vh;
+    height: 8vh;
     /* Making the navbar occupy all width, then, applying
     position fixed. */
     width: 100vw; 
-    position: fixed;
+    position: sticky;
+    z-index: 2;
     
 }
 
@@ -271,3 +272,43 @@ NAVBAR END
 ====================
 */
 
+
+
+
+/*
+==================== 
+HEADER START
+====================
+*/
+
+.header {
+    background: url(/0.2float/0.1netflixlanding/img/header.webp) center/cover no-repeat;
+    min-height:30vh; 
+
+}
+
+/* banner */
+.banner{
+    width: 50%;
+}
+
+/* Banner img */
+.banner-img img {
+    width: 100%;
+   
+}
+
+.banner h2{
+   font-size: 0.8rem;
+}
+
+.banner p{
+    font-size: 0.7rem;
+    max-width: 15rem;
+}
+
+/*
+==================== 
+HEADER END
+====================
+*/

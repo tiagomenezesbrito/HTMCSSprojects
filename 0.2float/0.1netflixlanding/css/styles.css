@@ -18,7 +18,7 @@ font-family: 'Tilt Prism', cursive;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    
+    border: 2px solid red;
 }
 
 
@@ -290,7 +290,7 @@ HEADER START
 */
 
 .header {
-    background: url(/0.2float/0.1netflixlanding/img/header.webp) center/cover no-repeat;
+    background: url(../img/header.webp) center/cover no-repeat;
     min-height:30vh; 
     width: 100vw;
     

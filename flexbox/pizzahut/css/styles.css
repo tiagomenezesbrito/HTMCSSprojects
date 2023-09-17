@@ -685,6 +685,103 @@ APP section
     }
 }
 
-@media screen and (min-width:1024px){
+/* @media screen and (min-width:1024px){
     
+} */
+
+
+
+
+/*
+=============== 
+FOOTER SECTION
+===============
+*/
+
+
+/*
+=====
+footer text
+=====
+*/
+
+.footer{
+    background: var(--background-clr-2);
+    color: var(--white-clr);
+    padding-left:24px;
+    
+}
+
+.content-footer{
+    margin-top: 1rem;
+    margin-bottom: 3.2rem;
+    line-height: 2.3rem;
+}
+
+
+.content-footer h3{
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+
+.content-footer a{
+    color: var(--white-clr);
+    display: block;
+    font-size: 1rem
+   /*  margin-top: 16px; */
+}
+
+.footer-socials h3 {
+    letter-spacing: 0.05rem;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.socials-container a{
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* Media Query */
+
+@media screen and (min-width:600px) {
+    .footer-text{
+        /* background: white; */
+        display: flex;
+        flex-direction:row;
+        column-gap: 1rem;
+        
+    }
+
+    .content-footer{
+        flex: 1;
+       
+    }
+
+    .content-footer h3{
+        font-size: 1.2rem;
+
+    }
+
+    .content-footer a{
+        font-size: 0.8rem;
+    }
+
+    .footer-socials{
+        margin-top: 1rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .footer-socials h3 {
+        font-size: 1.2rem;
+    
+    }
+
+    .socials-container{
+        flex: 1;
+    }
 }

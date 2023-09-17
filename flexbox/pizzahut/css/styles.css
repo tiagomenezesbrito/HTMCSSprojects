@@ -206,6 +206,10 @@ NAVBAR
     margin-right: 2rem;
 }
 
+.nav-link:hover{
+    color: var(--text-p-2);
+}
+
 @media screen and (min-width:600px){
     .imgnav-1{
         display: none;

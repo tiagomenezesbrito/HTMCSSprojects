@@ -158,7 +158,8 @@ p {
   width: 90vw;
   margin: 0 auto;
   min-width: 320px; 
-  max-width: 1300px;
+  /* max-width: 1300px; */
+  max-width: 1040px;
 }
 @media screen and (min-width: 992px) {
   .section-center {
@@ -507,7 +508,7 @@ NEWS
 }
 
 .news-img-container{
-    width: 80%;
+    width: 95%;
     max-width: 1040px;    
     margin: 0 auto;
     
@@ -532,4 +533,158 @@ NEWS
     margin: 0 auto;
     
 }
+}
+
+
+@media screen and (min-width:900px ){
+        .news-text h3{
+        font-size: 2rem;
+        max-width: 675px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .news-text p {
+    font-size: 1rem;
+}
+}
+
+
+/*
+=============== 
+APP section
+===============
+*/
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.qrcode-container {
+     width: 112px; 
+     
+
+}
+
+.app-text-container{
+    text-align: center;
+}
+
+.app-text-container h3{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--text-title);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.app-text-container p{
+    color: var(--text-title);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.app-hide{
+    display: none;
+}
+
+.stores-container{
+    display: flex;
+    
+}
+
+.stores-container a{
+    margin-right: 0.5rem;
+    
+}
+
+.stores-container img{
+    max-width:205px;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:600px ){
+
+    .app-section{
+        padding-top:1rem ;
+        padding-bottom:1rem ;
+    }
+
+
+    .app {
+        flex-direction: row;
+        align-items: center;
+        /* margin: 0 auto; */
+        width: 100vw;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    
+
+    .app-text-container{
+        order: 1;
+        flex: 3;
+        text-align:left;
+        
+    }
+
+    .app-text-container h3{
+        margin-top: 24px;
+        margin-bottom: 10px;
+        color: var(--clr-primary-1);
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }   
+
+    .app-text-container p{
+        font-size: 0.85rem;
+    }
+    .app-hide{
+        display: inline-block;
+    }
+
+    .qrcode-container{
+        order: 2;
+        flex: 1.7;
+        
+    }
+
+    .qrcode-container img{
+        width: 90px;
+        margin: 0 auto;
+    }
+
+    .stores-container{
+        order: 3;
+        flex: 2;
+    }
+   
+}
+
+@media screen and (min-width:1024px){
+    .app-text-container h3{
+        font-size: 1.5rem;
+    }
+    .app-text-container p{
+        font-size: 1rem;
+    }
+
+    .qrcode-container img {
+        width:100px;
+    }
+
+    .stores-container img{
+        width:160px;
+        height: 49px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    
 }
